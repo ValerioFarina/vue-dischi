@@ -10,141 +10,23 @@
     <body>
         <div id="root">
             <div id="container-albums">
-                <div class="album">
+                <div class="album" v-for="album in albums">
                     <div class="album-cover">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="">
+                        <img :src="album.poster" :alt="album.title">
                     </div>
                     <div class="album-info">
                         <div class="album-title">
-                            Titolo album
+                            {{ album.title }}
                         </div>
                         <div class="album-author">
-                            Autore album
+                            {{ album.author }}
                         </div>
                         <div class="album-year">
-                            Anno pubblicazione
+                            {{ album.year }}
                         </div>
                     </div>
                 </div>
 
-                <div class="album">
-                    <div class="album-cover">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="">
-                    </div>
-                    <div class="album-info">
-                        <div class="album-title">
-                            Titolo album
-                        </div>
-                        <div class="album-author">
-                            Autore album
-                        </div>
-                        <div class="album-year">
-                            Anno pubblicazione
-                        </div>
-                    </div>
-                </div>
-
-                <div class="album">
-                    <div class="album-cover">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="">
-                    </div>
-                    <div class="album-info">
-                        <div class="album-title">
-                            Titolo album
-                        </div>
-                        <div class="album-author">
-                            Autore album
-                        </div>
-                        <div class="album-year">
-                            Anno pubblicazione
-                        </div>
-                    </div>
-                </div>
-
-                <div class="album">
-                    <div class="album-cover">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="">
-                    </div>
-                    <div class="album-info">
-                        <div class="album-title">
-                            Titolo album
-                        </div>
-                        <div class="album-author">
-                            Autore album
-                        </div>
-                        <div class="album-year">
-                            Anno pubblicazione
-                        </div>
-                    </div>
-                </div>
-
-                <div class="album">
-                    <div class="album-cover">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="">
-                    </div>
-                    <div class="album-info">
-                        <div class="album-title">
-                            Titolo album
-                        </div>
-                        <div class="album-author">
-                            Autore album
-                        </div>
-                        <div class="album-year">
-                            Anno pubblicazione
-                        </div>
-                    </div>
-                </div>
-
-                <div class="album">
-                    <div class="album-cover">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="">
-                    </div>
-                    <div class="album-info">
-                        <div class="album-title">
-                            Titolo album
-                        </div>
-                        <div class="album-author">
-                            Autore album
-                        </div>
-                        <div class="album-year">
-                            Anno pubblicazione
-                        </div>
-                    </div>
-                </div>
-
-                <div class="album">
-                    <div class="album-cover">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="">
-                    </div>
-                    <div class="album-info">
-                        <div class="album-title">
-                            Titolo album
-                        </div>
-                        <div class="album-author">
-                            Autore album
-                        </div>
-                        <div class="album-year">
-                            Anno pubblicazione
-                        </div>
-                    </div>
-                </div>
-
-                <div class="album">
-                    <div class="album-cover">
-                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="">
-                    </div>
-                    <div class="album-info">
-                        <div class="album-title">
-                            Titolo album
-                        </div>
-                        <div class="album-author">
-                            Autore album
-                        </div>
-                        <div class="album-year">
-                            Anno pubblicazione
-                        </div>
-                    </div>
-                </div>
 
 
             </div>
