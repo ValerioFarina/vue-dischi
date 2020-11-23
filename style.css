@@ -5,15 +5,17 @@
 }
 
 body {
-    background-color: grey;
+    background-color: #808080d1;
     color: white;
 }
 
 select {
     display: block;
     width: 100px;
-    height: 25px;
+    height: 30px;
     margin: 20px auto;
+    border-radius: 5px;
+    outline: none;
 }
 
 #container-albums {
@@ -27,12 +29,20 @@ select {
     height: 300px;
     width: 200px;
     margin: 25px;
-    background-color: black;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #000000ad;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.album:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 30px 2px #000000;
 }
 
 .album-cover {
     height: 200px;
-    border: 2px solid white;
 }
 
 .album-cover img {
@@ -42,10 +52,15 @@ select {
 }
 
 .album-info {
+    display: flex;
+    flex-direction: column;
     height: 100px;
+    padding: 0 10px;
+    border-top: 3px solid grey;
 }
 
 .album-info > div {
-    height: calc(100% / 3);
-    line-height: calc(100px / 3);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
