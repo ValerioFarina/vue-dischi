@@ -23,7 +23,8 @@ var app = new Vue({
                         this.genres.push(album.genre);
                     }
                 });
-                console.log(this.genres);
+                // we sort the array of albums from the oldest album to the newest
+                this.albums.sort((a, b) => a.year - b.year);
 
             });
     }
