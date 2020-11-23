@@ -9,11 +9,16 @@ body {
     color: white;
 }
 
-select {
-    display: block;
-    width: 100px;
-    height: 30px;
+#select-genre,
+#select-order {
+    max-width: 1000px;
     margin: 20px auto;
+    text-align: center;
+}
+
+select {
+    width: 200px;
+    height: 30px;
     border-radius: 5px;
     outline: none;
 }

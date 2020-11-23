@@ -9,14 +9,25 @@
     </head>
     <body>
         <div id="root">
-            <select v-model="selectedGenre">
-                <option value="All">
-                    All
-                </option>
-                <option v-for="genre in genres" :value="genre">
-                    {{ genre }}
-                </option>
-            </select>
+            <div id="select-genre">
+                <span><strong>Generi:</strong> </span>
+                <select v-model="selectedGenre">
+                    <option value="All">
+                        All
+                    </option>
+                    <option v-for="genre in genres" :value="genre">
+                        {{ genre }}
+                    </option>
+                </select>
+            </div>
+
+            <div id="select-order">
+                <span><strong>Ordina:</strong> </span>
+                <select v-model="order" @change="sortAlbums()">
+                    <option value="asc">Dal più vecchio al più nuovo</option>
+                    <option value="desc">Dal più nuovo al più vecchio</option>
+                </select>
+            </div>
 
             <div id="container-albums">
                 <div class="album" v-for="album in albums" v-if="album.genre == selectedGenre || selectedGenre == 'All'">
