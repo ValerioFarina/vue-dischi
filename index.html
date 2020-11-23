@@ -19,7 +19,7 @@
             </select>
 
             <div id="container-albums">
-                <div class="album" v-for="album in albums">
+                <div class="album" v-for="album in albums" v-if="album.genre == selectedGenre || selectedGenre == 'All'">
                     <div class="album-cover">
                         <img :src="album.poster" :alt="album.title">
                     </div>
