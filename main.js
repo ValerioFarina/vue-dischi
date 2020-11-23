@@ -3,7 +3,8 @@ var app = new Vue({
 
     data: {
         albums : [],
-        genres : []
+        genres : [],
+        selectedGenre : 'All'
     },
 
     methods: {

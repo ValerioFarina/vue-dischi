@@ -9,6 +9,13 @@ body {
     color: white;
 }
 
+select {
+    display: block;
+    width: 100px;
+    height: 25px;
+    margin: 20px auto;
+}
+
 #container-albums {
     display: flex;
     flex-wrap: wrap;

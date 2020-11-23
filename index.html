@@ -9,6 +9,15 @@
     </head>
     <body>
         <div id="root">
+            <select v-model="selectedGenre">
+                <option value="All">
+                    All
+                </option>
+                <option v-for="genre in genres" :value="genre">
+                    {{ genre }}
+                </option>
+            </select>
+
             <div id="container-albums">
                 <div class="album" v-for="album in albums">
                     <div class="album-cover">
